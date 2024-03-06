@@ -32,18 +32,35 @@ COMMAND TO RUN: ./mysh
 Recommended commands to test functionality:
 
 wget https://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/locus_types/gene_with_protein_product.txt cat gene_with_protein_product.txt
+
+cat gene_with_protein product.txt
+
 cut -f2 gene_with_protein product.txt > gene_with_protein_product_names_only_vl.txt
+
 cat gene_with_protein_product_names_only_vl.txt
+
 cat gene_with_protein_product.txt | cut -f2 > gene_with_protein_product_names_only_v2.txt
+
 diff gene_with_protein_product_names_only_v2.txt gene_with_protein_product_names_only_vl.txt
+
 shuf gene_with_protein_product_names_only_vl.txt
+
 shuf gene_with_protein_product_names_only_vl.txt > gene_with_protein_product_names_only_vl_shuffled.txt
+
 sort < gene_with_protein_product_names_only_vl_shuffled.txt > gene_with_protein_product_names_only_vl_sorted.txt
+
 head -100 gene_with_protein_product_names_only_vl.txt > h100.txt
+
 tail -50 gene_with_protein_product_names_only_vl.txt > t50.txt
+
 cat h100.txt t50.txt > ht150_v1.txt
+
 wc -1 ht150_v1.txt
+
 cat h100.txt > ht150_v2.txt
+
 cat t50.txt >> ht150_v2.txt
+
 diff ht150_v1.txt ht150_v2.txt
+
 ls gene*
