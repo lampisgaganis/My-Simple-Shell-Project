@@ -31,7 +31,7 @@ COMMAND TO RUN: ./mysh
 
 Recommended commands to test functionality:
 
-wget https://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/locus_types/gene_with_protein_product.txt cat gene_with_protein_product.txt
+wget https://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/locus_types/gene_with_protein_product.txt
 
 cat gene_with_protein product.txt
 
