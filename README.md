@@ -6,7 +6,7 @@ Features of My Simple Shell include:
 
 * I/O Redirection
 
-  * IO redirection is supported for standard input (<), standard output (> and >>), allowing users to control the flow of data. In this way, output from one program can be used as input for another and so forth.
+  * IO redirection is supported for standard input (<), standard output (> and >>), allowing users to control the flow of data. 
 
 * Command Pipelines:
 
