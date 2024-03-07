@@ -1,38 +1,38 @@
-My Simple Shell Project (mysh)
+##My Simple Shell Project (mysh)
 
-My Simple Shell Project is a C++ program aiming to emulate functionality of widely used Unix shells such as tcsh and bash. A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems.
+**My Simple Shell Project** is a C++ program aiming to emulate functionality of widely used Unix shells such as _tcsh_ and _bash_. A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems.
 
 Features of My Simple Shell include:
 
--I/O Redirection
+*I/O Redirection
 
-IO redirection is supported for standard input (<), standard output (> and >>), allowing users to control the flow of data. In this way, output from one program can be used as input for another and so forth.
+  *IO redirection is supported for standard input (<), standard output (> and >>), allowing users to control the flow of data. In this way, output from one program can be used as input for another and so forth.
 
--Command Pipelines:
+*Command Pipelines:
 
-Users can execute command pipelines using the pipe ('|') symbol, enabling the chaining of multiple commands.
+  *Users can execute command pipelines using the pipe ('|') symbol, enabling the chaining of multiple commands.
 
--Wildcard Expansion:
+*Wildcard Expansion:
 
-Wildcard characters ('*' and '?') are supported for filename expansion using the glob function.
+  *Wildcard characters ('*' and '?') are supported for filename expansion using the glob function.
 
--Background execution:
+*Background execution:
 
-Background execution is supported, allowing the user to run multiple commands concurrently in the background.
+  *Background execution is supported, allowing the user to run multiple commands concurrently in the background.
 
--Signal Handling:
+*Signal Handling:
 
-The program handles SIGTSTP and SIGINT signals, providing a basic signal handler.
+  *The program handles SIGTSTP and SIGINT signals, providing a basic signal handler.
 
 This project was part of the System Programming course, exploring advanced concepts such as command parsing and execution, system calls, parent and child processes, concurrent processes, inter process communication and many more.
 
-COMPILE: make
+COMPILE: ```make```
 
-COMMAND TO RUN: ./mysh
+COMMAND TO RUN: ```./mysh```
 
 Recommended commands to test functionality:
 
-wget https://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/locus_types/gene_with_protein_product.txt
+```wget https://ftp.ebi.ac.uk/pub/databases/genenames/hgnc/tsv/locus_types/gene_with_protein_product.txt
 
 cat gene_with_protein product.txt
 
@@ -64,4 +64,4 @@ cat t50.txt >> ht150_v2.txt
 
 diff ht150_v1.txt ht150_v2.txt
 
-ls gene*
+ls gene*```
