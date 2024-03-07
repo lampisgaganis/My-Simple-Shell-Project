@@ -64,4 +64,4 @@ cat t50.txt >> ht150_v2.txt
 
 diff ht150_v1.txt ht150_v2.txt
 
-ls gene*```
+ls gene* ```
