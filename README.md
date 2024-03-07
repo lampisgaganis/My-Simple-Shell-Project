@@ -27,6 +27,7 @@ The program handles SIGTSTP and SIGINT signals, providing a basic signal handler
 This project was part of the System Programming course, exploring advanced concepts such as command parsing and execution, system calls, parent and child processes, concurrent processes, inter process communication and many more.
 
 COMPILE: make
+
 COMMAND TO RUN: ./mysh
 
 Recommended commands to test functionality:
